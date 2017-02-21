@@ -1,0 +1,67 @@
+\usepackage{cambridgecolours}
+
+\def\beamer@theme@base@blue{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreBlue}
+  \definecolor{CambridgeLight}{named}{CambridgeLightBlue}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkBlue}
+}
+\def\beamer@theme@base@print{
+  \definecolor{CambridgeCore}{named}{CambridgeWhitePrint}
+  \definecolor{CambridgeLight}{named}{CambridgeBlackPrint}
+  \definecolor{CambridgeDark}{named}{CambridgeBlackPrint}
+}
+\def\beamer@theme@base@orange{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreOrange}
+  \definecolor{CambridgeLight}{named}{CambridgeLightOrange}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkOrange}
+}
+\def\beamer@theme@base@purple{
+  \definecolor{CambridgeCore}{named}{CambridgeCorePurple}
+  \definecolor{CambridgeLight}{named}{CambridgeLightPurple}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkPurple}
+}
+\def\beamer@theme@base@green{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreGreen}
+  \definecolor{CambridgeLight}{named}{CambridgeLightGreen}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkGreen}
+}
+\def\beamer@theme@base@teal{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreTeal}
+  \definecolor{CambridgeLight}{named}{CambridgeLightTeal}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkTeal}
+}
+
+\beamer@theme@base@blue
+\DeclareOptionBeamer{base}{\csname beamer@theme@base@#1\endcsname}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\setbeamercolor*{normal text}{fg=CambridgeDark,bg=white}
+\setbeamercolor*{structure}{fg=CambridgeDark}
+
+\setbeamercolor*{palette primary}{fg=white,bg=CambridgeCore}
+\setbeamercolor*{palette secondry}{fg=white,bg=CambridgeDark}
+\setbeamercolor*{palette tertiary}{fg=white,bg=CambridgeLight!40!black}
+\setbeamercolor*{palette quaternary}{fg=white,bg=CambridgeLight!40!white}
+
+\setbeamercolor*{title}{fg=white,bg=CambridgeCore}
+\setbeamercolor*{author}{fg=white,bg=CambridgeDark}
+\setbeamercolor*{institute}{parent=author}
+\setbeamercolor*{date}{fg=white,bg=CambridgeLight}
+\setbeamercolor*{abstract}{parent=author}
+
+\setbeamercolor*{lower separation line head}{fg=white,bg=CambridgeLight}
+
+\setbeamercolor*{special page canvas}{bg=CambridgeWhitePrint}
+\setbeamercolor*{special page separator upper}{bg=CambridgeLight!40!white}
+\setbeamercolor*{special page separator lower}{bg=CambridgeLight!40!black}
+\setbeamercolor*{special page title}{fg=CambridgeWhitePrint,bg=CambridgeDark!80!white}
+
+\setbeamercolor*{block body}{bg=CambridgeCore!20!normal text.bg,fg=CambridgeDark}
+\setbeamercolor*{block title}{bg=CambridgeDark,fg=white}
+
+\setbeamercolor*{alerted text}{fg=CambridgeCore}
+%\setbeamercolor*{alerted text}{fg=red}
+
+\mode<all>
